@@ -43,11 +43,25 @@ const KakaoLogin = ()=>{
 
         }
     }
+    const handleClick_2 = ()=>{
+        
+        const reqFunction_ = async ()=>{
+                
+                window.open("http://localhost:8080/kakao/getCode","팝업 테스트","width=400, height=300, top=10, left=10");
+            }
+        reqFunction_();
+        
+
+    }
     return (
         <>
             <h1>KAKAO LOGIN</h1>        
             {/* 동기요청 */}
             <a href="http://localhost:8080/kakao/getCode">로그인요청</a> | 
+
+            {/* 비동기 로그인 요청 */}
+            <button onClick = {handleClick_2}>로그인 요청(비동기)</button>
+
             {/* 비동기요청 */}
             <button onClick={profileHandler}>프로필 확인</button> | 
             {/* 동기요청  */}

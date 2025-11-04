@@ -100,7 +100,7 @@ public class UserRestController {
 
             //---------------------------------------------
             Cookie accessCookie = new Cookie(JwtProperties.ACCESS_TOKEN_COOKIE_NAME, tokenInfo.getAccessToken());
-            accessCookie.setHttpOnly(true);
+            accessCookie.setHttpOnly(true); // setHttpOnly 자바스크립트에서 토큰 접근 불허
             accessCookie.setSecure(false); // Only for HTTPS
             accessCookie.setPath("/"); // Define valid paths
             accessCookie.setMaxAge(JwtProperties.ACCESS_TOKEN_EXPIRATION_TIME); // 1 hour expiration

@@ -79,7 +79,7 @@ public class OpenDataAPIController {
     {
         log.info("/openData/weather.." + nx + " , " + ny+", " );
 
-        String serviceKey="xYZ80mMcU8S57mCCY/q8sRsk7o7G8NtnfnK7mVEuVxdtozrl0skuhvNf34epviHrru/jiRQ41FokE9H4lK0Hhg==";
+        String serviceKey="jXqTYgzxm73mgthwTg+MoIPShLI7R8npCFzwME5IPitFT/kGA9ViRLLcaAjFzR5ZY+XE0aA9H+DFQqvR3Slouw==";
 
         String url="http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst?";
         url += "serviceKey="+serviceKey;

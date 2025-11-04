@@ -19,7 +19,7 @@ import java.time.LocalDateTime;
 @RequestMapping("/kakao")
 @CrossOrigin(origins = {"http://127.0.0.1:3000","http://localhost:3000"})
 public class KakaoRestfulAPIController {
-    private String CLIENT_ID="-";
+    private String CLIENT_ID="8a55784f0de293f8dfb5545e7f8c565a";
     private String REDIRECT_URI="http://localhost:8080/kakao/callback";     //SpringServer 경로로 Redirect
     private String LOGOUT_REDIRECT_URI="http://localhost:3000/api/kakaoLogin";  //React경로로
 
